@@ -1,0 +1,8 @@
+<form ng-controller="LoginController">  
+	User name: <input type="text" id="username" ng-model="username"><br/><br/>
+	Password: <input type="text" id="password" ng-model="password"><br/><br/>
+	<input type="button" id="createButton" value="Create" ng-click="attemptLogin()">
+	<p>{{loginError}}</p>
+</form>
+
+<div>To login type the same characters in the user name field and the password field</div> 

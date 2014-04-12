@@ -1,0 +1,28 @@
+<!doctype html>
+<html ng-app="UsersApp">
+  <head>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular.min.js"></script>
+    <script src='angularRoutesServices/routesServices.js'></script>
+    <!--<script src='angularControllers/controllersUser.js'></script>
+    <script src='angularControllers/controllersCreateUser.js'></script>
+    <script src='angularControllers/controllersManageTable.js'></script>
+  -->
+    <script src='angularControllers/controllersMain.js'></script>
+    <script src='angularControllers/controllersLogin.js'></script>
+  
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+    <style>
+    body{
+      text-align:center;
+    }
+    #nav{margin:20px;}
+    </style>
+</head>
+  <body>
+    <h1>Simple Authentication</h1>
+    <div id="nav"><a href="/">/</a>   |    <a href="/#/main">main</a>   |   <a href="/#/login">login</a></div>
+    <div ng-view></div>
+  </body>
+</html>
+
+
