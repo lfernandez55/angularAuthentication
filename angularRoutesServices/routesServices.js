@@ -22,6 +22,12 @@ function aUsersRouteConfig($routeProvider) {
 // Set up our route so the AMail service can find it
 aUsers.config(aUsersRouteConfig);
 
+// gets rid of hashes in url see: 
+// http://stackoverflow.com/questions/17350412/angularjs-1-1-5-automatically-adding-hash-tag-to-urls
+aUsers.config(['$locationProvider', function($locationProvider){
+    $locationProvider.html5Mode(true).hashPrefix('!');
+}]);
+
 aUsers.run( function($rootScope, $location) {
 
     // register listener to watch route changes
