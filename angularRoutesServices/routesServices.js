@@ -44,7 +44,9 @@ aUsers.run( function($rootScope, $location) {
     });
 })
 
-//Set up a service (examine comments at end of this file for an alternate pattern for setting up a service)
+//Set up a service 
+//Not used in this example
+/*
 aUsers.factory('GenericUserService', function($http) {
   var GenericUserService = {};
   GenericUserService.query = function(requestType,firstname,lastname,institution,id,callback){
@@ -67,3 +69,4 @@ aUsers.factory('GenericUserService', function($http) {
 
   return GenericUserService;
 });
+*/
